@@ -1,0 +1,30 @@
+﻿@model IEnumerable<ToDo.Models.Task>
+<table>
+    @foreach (var item in Model)
+    {
+        if (item.IsDone == true)
+        {
+            <tr>
+                <td>
+                    <a href="@Url.Action("ToggleDone", new { id=item.TaskID })">
+                        @if (item.IsDone)
+                        {
+                            <span class="glyphicon glyphicon-check"></span>
+                        }
+                        else
+                        {
+                            <span class="glyphicon glyphicon-unchecked"></span>
+                        }
+                    </a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TaskName)
+                </td>
+                <td>
+                    : @Html.DisplayFor(modelItem => item.List.Title)
+                </td>
+            </tr>
+        }
+    }
+
+</table>

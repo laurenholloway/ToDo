@@ -17,6 +17,27 @@ namespace ToDo.Controllers
         // GET: Tasks
         public ActionResult Index()
         {
+            
+            var tasks = db.Tasks.Include(t => t.List);
+            return View(tasks.ToList());
+        }
+
+        //CREATE NEW PAGE
+        public ActionResult Reminders()
+        {
+            var tasks = db.Tasks.Include(t => t.List);
+            return View(tasks.ToList());
+        }
+
+
+
+
+
+
+
+        public ActionResult CompletedTasks()
+        {
+
             var tasks = db.Tasks.Include(t => t.List);
             return View(tasks.ToList());
         }

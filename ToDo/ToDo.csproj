@@ -197,6 +197,8 @@
     <Content Include="Views\Lists\Details.cshtml" />
     <Content Include="Views\Lists\Edit.cshtml" />
     <Content Include="Views\Lists\Index.cshtml" />
+    <Content Include="Views\Tasks\Reminders.cshtml" />
+    <Content Include="Views\Tasks\CompletedTasks.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
