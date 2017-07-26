@@ -5,8 +5,11 @@
 - [Automatically Setting Current Date for Creation Date of a List](#creation)
 - [Creating a Partial View for Overdue Tasks](#partial)
 <hr />
+
 <a name="links"></a>
+
 ## Changing Links in the Navbar
+
 The process of creating links in the navbar is different in MVC than how we created links in our straight-up HTML/CSS lesson.
 - Navigate to the Layout view in the Shared Views folder
 - Locate the portion of the navbar that has the 3 list items for the link
